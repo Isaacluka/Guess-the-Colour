@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=.5 user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess the Colour</title>
+</head>
+<body>
+    <h1>THE GUESSING GAME</h1>
+    <div class="colorBox" data-testid="colorBox" id="colorBox"></div>
+    <!-- <div class="modalContainer"> -->
+    <div class="modal correct" data-testid="gameStatus">
+        <p>🎉🎉Correct!🎉🎉</p>
+    </div>
+    <div class="modal wrong" data-testid="gameStatus">
+        <p>😭Wrong Choice!😭</p>
+        <br>
+        <span class="endScore"></span>
+    </div>
+    <!-- </div> -->
+    <div class="gameStat">
+        <div class="newGameButton" data-testid="newGameButton">New Game</div>
+        <h2>Score: <span id="scoreCard" class="scoreCard" data-testid="score"></span></h2>
+    </div>
+    <div class="gameInstructions" data-testid="gameInstructions"> Guess the correct colour.</div>
+    <div class="colorOption">
+        <div class="option one" data-testid="colorOption" id="one"></div>
+        <div class="option two" data-testid="colorOption"></div>
+        <div class="option three" data-testid="colorOption"></div>
+        <div class="option four" data-testid="colorOption"></div>
+        <div class="option five" data-testid="colorOption"></div>
+        <div class="option six" data-testid="colorOption"></div>
+    </div>
+
+    <footer>Copyright &copy Isaac Luka 2025</footer>
+</body>
+<script src="script.js"></script>
+</html>

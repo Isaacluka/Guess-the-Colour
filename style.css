@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1c212b;
+    padding: 40px;
+    /* gap: 2rem; */
+
+}
+h1{
+    color: #48e99b;
+    margin: 2rem;
+}
+.colorBox{
+    /* border: .2rem solid red; */
+    height: 250px;
+    width: 250px;
+    border-radius: 5%;
+    margin-bottom: 2rem;
+}
+.gameStat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    background: #303a48;
+    width: 350px;
+    padding: 1rem;
+    color:  #48e99b;
+    border-radius: 1rem 4rem;
+}
+.newGameButton{
+    background-color: #48e99b;
+    color: #1c212b;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+.gameInstructions{
+    color: #48e99b;
+    font-size: 1.6rem;
+    margin: 1rem;
+}
+.colorOption{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.option{
+    height: 5rem;
+    width: 5rem;
+    border: .1rem solid #303a48; 
+    border-radius: 45%; 
+}
+/* .modalContainer{
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.modalContainer.show {
+    pointer-events: auto;
+    opacity: 1;
+} */
+.modal{
+/* border: .1rem solid black; */
+background: white;
+color: #1c212b;
+font-size: 1.6rem;
+/* box-sizing: border-box; */
+border-radius: 1rem;
+padding: 1rem 4rem;
+text-align: center;
+position: absolute;
+top: 0;
+left: 50%;
+transform: translate(-50%, -50%) scale(.1);
+transition: transtion 0.5s, top 0.4s;
+visibility: hidden;
+}
+.show{
+    visibility: visible;
+    top: 20%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+footer{
+    color: #48e99b;
+    position: absolute;
+    bottom: 2rem;
+    text-align: center;
+    width: 100%;
+    top: 95%;
+}
+
+@media only screen and (max-width: 767px){
+    h1{
+        margin: 2rem;
+    }
+    .colorBox{
+        width: 80%;
+        height: 480px;
+    }
+    .gameStat{
+        width: 80vw;
+        /* font-size: 80%; */
+    }
+    .gameInstructions{
+        font-size: 200%;
+        margin: 3rem;
+    }
+    .colorOption{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .option{
+        height: 10rem;
+        width: 10rem;
+    }
+}
